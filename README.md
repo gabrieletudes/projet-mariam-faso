@@ -1,2 +1,2 @@
-# projet-mariam-faso
+# Projet - Mariam Faso
 Projet pour l'ASBL Mariam Faso
