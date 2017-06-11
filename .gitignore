@@ -4,7 +4,14 @@ wireframe.sketch
 design.sketch
 documents
 images
+index.php
 **/.DS_Store
 mf-theme-original
-mf-wordpress/
-!mf-wordpress/wp-content/themes/mftheme
+mf-wordpress/*
+mf-wordpress/wp-content/*
+mf-wordpress/wp-content/themes/*
+!mf-wordpress/wp-content/themes/mftheme/
+mf-wordpress/wp-content/themes/mftheme/index.html
+mf-wordpress/wp-content/themes/mftheme/assets/*
+!mf-wordpress/wp-content/themes/mftheme/assets/fonts
+mf-wordpress/wp-content/themes/mftheme/node_modules
