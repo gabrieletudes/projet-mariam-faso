@@ -2,4 +2,9 @@ diagrame.sketch
 8pt-grid-template.sketch
 wireframe.sketch
 design.sketch
+documents
+images
 **/.DS_Store
+mf-theme-original
+mf-wordpress/
+!mf-wordpress/wp-content/themes/mftheme
