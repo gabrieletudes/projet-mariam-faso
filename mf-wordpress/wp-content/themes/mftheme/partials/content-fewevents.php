@@ -17,10 +17,10 @@ $the_query = new WP_Query($args);
             <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
                 <article class="events-section__article">
                     <time datetime="2017-11-03" class="events-section__article-time"><?php the_field('event_start'); ?></time>
-                    <a href="<?php the_permalink();?>">
+                    <a class="events-section__article-link" href="<?php the_permalink();?>">
                         <?= get_the_post_thumbnail( $post_id, 'events-small' );?>
-                    </a>
                     <h3 class="events-section__article-title"><?php the_field('event_title'); ?></h3>
+                    </a>
                     <p class="events-section__article-content"><?php mf_the_excerpt(100,'event_description'); ?></p>
                     <a href="<?php the_permalink() ?>" class="view-more-link"><?=__('Lire plus sur l’événement ','mf');?><span class="hidden"><?=the_field('event_title');?></span></a>
                 </article>
