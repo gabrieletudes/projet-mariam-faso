@@ -17,8 +17,10 @@ $the_query = new WP_Query($args);
 			</header>
 			<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 				<article class="projets-section__article">
+				<a class="events-section__article-link" href="<?php the_permalink();?>">
 					<?= get_the_post_thumbnail( $post_id, 'article-small' );?>
 					<h3 class="events-section__article-title"><?php the_field('page_title');?></h3>
+				</a>
 					<p class="projets-section__article-content"><?php mf_the_excerpt(100,'project_description'); ?></p>
 					<a href="<?php the_permalink() ?>" class="view-more-link"><?= __('Lire plus sur le projet ','mf');?><span class="hidden"><?=the_field('project_title');?></span></a>
 				</article>
