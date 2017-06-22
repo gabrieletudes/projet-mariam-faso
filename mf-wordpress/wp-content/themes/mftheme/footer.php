@@ -43,5 +43,6 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script type="text/javascript" src="<?php theme_asset('/js/script.js')?>"></script>
+<script type="text/javascript" src="<?php theme_asset('/js/lightbox-plus-jquery.min.js')?>"></script>
 </body>
 </html>

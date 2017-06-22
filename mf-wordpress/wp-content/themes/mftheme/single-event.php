@@ -61,7 +61,7 @@ if($gallery){
             </header>
             <?php foreach( $images as $image ):?>
                 <?php if($i < $items_per_page): $i++?>
-                    <a class="photos-section__img" href="<?php echo $image['url']; ?>">
+                    <a class="photos-section__img" data-lightbox="events" href="<?php echo $image['url']; ?>">
                         <img src="<?php echo $image['sizes']['gallery-small']; ?>" alt="<?php echo $image['alt']; ?>" />
                     </a>
                 <?php endif;?>

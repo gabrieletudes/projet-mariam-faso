@@ -29,7 +29,7 @@ if($gallery){
             </header>
             <?php foreach( $images as $image ):?>
                 <?php if($i < $items_per_page): $i++?>
-                    <a class="photos-section__img" href="<?php echo $image['url']; ?>">
+                    <a class="photos-section__img" data-lightbox="trip" href="<?php echo $image['url']; ?>">
                         <img src="<?= $image['sizes']['gallery-small']; ?>" alt="<?= $image['alt']; ?>" />
                     </a>
                 <?php endif;?>
