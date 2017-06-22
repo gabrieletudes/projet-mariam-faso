@@ -1,0 +1,58 @@
+.partners{
+    &-wrapper{
+        color: $textWhite;
+        background-color: slategrey;
+        background:linear-gradient(90deg, rgba(0,0,0,0.75) 33%, rgba(0,0,0,0.50) 100%), url('../../src/img/partners-background.jpg') center center;
+        background-size: cover;
+        //padding: 40px 0;
+        @include for-tablet-portrait-up{
+            background:linear-gradient(90deg, rgba(0,0,0,0.75) 33%, rgba(0,0,0,0.50) 100%), url('../../src/img/partners-background.jpg') center center;
+            background-size: cover;
+            //padding: 80px 0;
+        }
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1000px;
+        width: 100%;
+        &__element {
+            width: 33%;
+            max-height: 75px;
+            margin-right: 20px;
+            max-width: 187px;
+            &:nth-child(n+4) {
+                margin-top: 24px;
+            }
+            @include for-tablet-portrait-up{
+                &:nth-child(n+4) {
+                    margin-top: 0;
+                }
+                &:nth-child(n+5) {
+                    margin-top: 20px;
+                }
+            }
+            @media (min-width: 845px) {
+                &:nth-child(n+5) {
+                    margin-top: 0px;
+                }
+                &:nth-child(n+6) {
+                    margin-top: 40px;
+                }
+            }
+            @include for-tablet-landscape-up{
+                &:nth-child(n+5) {
+                    margin-top: 0px;
+                }
+                &:nth-child(n+6) {
+                    margin-top: 40px;
+                }
+            }
+            & img{
+                width: 100%;
+                filter: hue-rotate(120deg) saturate(1.5);
+            }
+        }
+    }
+}

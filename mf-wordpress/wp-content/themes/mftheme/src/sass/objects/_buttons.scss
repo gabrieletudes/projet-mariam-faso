@@ -1,0 +1,150 @@
+.button-wrapper{
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+
+    @include for-tablet-portrait-up{
+        align-items: flex-end;
+        width: 95%;
+        &--top{
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+    @include  for-phone-only{
+        &--on-inversed{
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 544px;
+        }
+    }
+}
+
+.cta-button{
+    margin-top: 44px;
+    background-color: $bgcolorLightOrange;
+    padding: 20px 40px;
+    color: $textWhite;
+    text-decoration: none;
+    font-weight: bold;
+    @include rem(font-size, 16px);
+    @include for-tablet-portrait-up{
+        margin-top: 0;
+    }
+    &:hover, &:focus{
+        background-color: $bgcolorDarkOrange;
+    }
+    &--on-inversed{
+        //margin-top: 32px;
+        margin-bottom: 4px;
+        order: 3;
+        @include for-tablet-portrait-up{
+            margin: 0;
+            order: 0;
+        }
+    }
+    &--mt-44{
+        @include for-tablet-portrait-up{
+            margin-top: 44px;
+        }
+    }
+    &--to-start{
+        align-self: flex-start;
+    }
+    &--mr-32{
+    @include for-tablet-portrait-up{
+        margin-right: 32px;
+    }
+    }
+    &--no-mt{
+        margin-top: 0;
+    }
+
+}
+
+.view-more-link{
+    text-decoration: none;
+    margin-left: 16px;
+    //display: flex;
+    //flex:1 1 auto;
+    font-size: 16px;
+    padding: 8px 0;
+    font-weight: bold;
+    //max-width: 180px;
+    color: $bgcolorlightPurple;
+    align-self: flex-start;
+    &:after{
+        margin-left: 16px;
+        font-family: 'fontsmariam';
+        content: '';
+
+    }
+    &--push-bottom{
+        margin-top: auto;
+    }
+
+}
+
+.view-link{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px 16px;
+    color: $textWhite;
+    background-color: $bgcolorlightPurple;
+    &:hover, &:focus{
+        background-color: $bgcolorDarkPurple;
+    }
+    &--previous{
+        &:before{
+            font-family: 'fontsmariam';
+            content: '';
+            margin-right: 16px;
+        }
+    }
+    &--next{
+        &:after{
+            font-family: 'fontsmariam';
+            content: '';
+            margin-left: 16px;
+        }
+    }
+    &--to-right{
+        margin-right: 10px;
+        @include for-tablet-portrait-up{
+            margin-left: auto;
+            margin-right: 16px;
+        }
+    }
+}
+
+.send-button{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 16px;
+    color: $textWhite;
+    background-color: $bgcolorlightPurple;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: $bgcolorDarkPurple;
+    }
+    &--next{
+        &:after{
+            font-family: 'fontsmariam';
+            content: '';
+            margin-left: 16px;
+        }
+    }
+    &--to-right{
+        margin-right: 10px;
+        @include for-tablet-portrait-up{
+            margin-left: auto;
+            margin-right: 16px;
+        }
+    }
+}

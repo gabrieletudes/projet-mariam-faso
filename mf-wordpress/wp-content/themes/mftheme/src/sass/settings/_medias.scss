@@ -1,0 +1,26 @@
+//$xs-max: 640px; // Set xs breakpoint's max width
+//$sm-max: 1024px; // Set sm breakpoint's max width
+//$md-max: 1440px; // Set md breakpoint's max width
+//$lg-max: 1920px; // Set lg breakpoint's max width
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-720-up{
+    @media (min-width: 750px) {@content;}
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-between-tablet-desktop-down {
+  @media (max-width: 925px) { @content; }
+}
+@mixin for-between-tablet-desktop-up {
+  @media (min-width: 976px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}

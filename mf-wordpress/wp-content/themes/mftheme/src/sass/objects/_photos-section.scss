@@ -1,0 +1,25 @@
+.photos-section{
+    &__img{
+        margin-bottom: 16px;
+        width: 45%;
+        max-width: 240px;
+        //max-height: 240px;
+        @include for-phone-only{
+        height: 45%;
+        //max-height: 45%;
+        }
+    //fix firefox image height issue
+    @-moz-document url-prefix() {
+        height: auto;
+}
+    }
+    &__img:nth-child(2n+2){
+        display: none;
+    }
+    @include for-tablet-portrait-up{
+        &__img, &__img:nth-child(2n+2){
+            display: flex;
+            width: 240px;
+        }
+    }
+}

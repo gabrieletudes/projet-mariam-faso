@@ -1,0 +1,28 @@
+/* gabrieletudes/projet-mariam-faso
+ *
+ * /src/sass/styles.scss - Main styles for Mariam Faso Theme
+ *
+ * coded by gabriel M!
+ * started at 08/05/2017
+ */
+
+
+  // use rem for text and em for padding and borders, margin in px
+
+ // Settings : Global variables, colors, fonts,...
+ @import 'settings/main';
+
+ // Tools : Default mixins and functions
+ @import 'tools/main';
+
+ // Generic : Ground-zero styles resets, box-sizing, Normalize.css
+ @import 'generic/main';
+
+ // Base : Html elements a, body, header,...
+ @import 'base/main';
+
+ // Objects : classes, without cosmetics (no colors), paddings, margins...
+ @import 'objects/main';
+
+ // Components : classes with colors
+ @import 'components/main';

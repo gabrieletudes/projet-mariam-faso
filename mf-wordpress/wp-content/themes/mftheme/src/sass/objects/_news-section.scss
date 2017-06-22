@@ -1,0 +1,43 @@
+.news-section{
+    //margin: 0 auto;
+    &__article{
+        max-width: 320px;
+        margin-bottom: 32px;
+        line-height: 1.5;
+        @include for-phone-only{
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        & img{
+            //border-bottom: 1px solid green;
+        }
+        &-title{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 8px 0;
+            padding: 0 16px;
+            line-height: 1.4;
+            transition: all .3s ease-in-out;
+        &--fs-28{
+            margin-top: 0;
+            @include for-between-tablet-desktop-up{
+            font-size: 28px;
+            }
+        }
+        }
+        &-time{
+            margin: 16px 8px 0 16px;
+            color: $bgcolorLightOrange;
+            font-weight: 500;
+        }
+        &-content{
+            margin: 8px 16px 16px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+    }
+    &__content-wrap{
+        max-width: 488px;
+    }
+}

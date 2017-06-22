@@ -1,0 +1,120 @@
+//tags
+.tag{
+    color: $textWhite;
+    border-radius: 20px;
+    padding: 1px 12px;
+    display: inline-block;
+    max-height: 26px;
+    &--green {
+        background-color: $tagcolorGreen;
+    }
+    &--orange {
+        background-color: $bgcolorLightOrange;
+    }
+}
+
+//breadcrumbs
+.breadcrumbs-section{
+    display: flex;
+    &__element{
+        &:not(:last-child):after{
+            font-family: 'fontsmariam';
+            content: '';
+            color: $bgcolorLightOrange;
+            margin: 0 16px;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color: inherit;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+//section-wrapper
+.section-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    //border-bottom: 2px solid slategrey;
+    flex-direction: column;
+    @include for-tablet-portrait-up{
+        padding: 80px 0;
+    }
+    padding: 80px 0;
+    &--soft-orange{
+        background-color: #edc46a;
+    }
+    &--very-light-gray{
+        background-color: #f3f3f3;
+    }
+    &--almost-white{
+        background-color: #fefefe;
+    }
+    &--less-pad-top-btm{
+        padding: 32px 0 0;
+    }
+    &--hidde{
+        @include for-phone-only{
+            display: none;
+        }
+    }
+}
+
+// section
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    line-height: 1.2;
+    flex-wrap: wrap;
+    @include for-tablet-portrait-up{
+        justify-content: space-around;
+        max-width: 1024px;
+        width: 98%;
+    }
+    &--mb-16{
+        margin-bottom: 16px;
+    }
+    &__header{
+        display: flex;
+        max-width: 1024px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 48px;
+        @include for-tablet-portrait-up{
+            width: 97.65%;
+        }
+        &--to-start{
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &--no-marg{
+            margin: 0;
+        }
+    }
+    &__title{
+        font-size: 36px;
+        font-weight: bold;
+        max-width: 512px;
+        @include for-tablet-portrait-up{
+            text-align: center;
+            margin: 0;
+        }
+        &--to-left{
+            text-align: left;
+        }
+    }
+    &__intro{
+        margin-top: 20px;
+        max-width: 432px;
+        line-height: 1.5;
+        font-size: 18px
+    }
+}

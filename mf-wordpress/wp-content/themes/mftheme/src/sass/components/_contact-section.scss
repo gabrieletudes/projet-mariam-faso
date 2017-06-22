@@ -1,0 +1,111 @@
+.contact-section{
+    &__faq {
+        display: flex;
+        width: 90%;
+        max-width: 1000px;
+        flex-direction: column;
+        line-height: 1.5;
+    }
+    &__question {
+        max-width: 712px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 700;
+        color: $bgcolorLightOrange;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        &:before {
+            content: 'Q';
+            font-family: 'Raleway';
+            margin-right: 8px;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+    &__answer {
+        max-width: 712px;
+        width: 100%;
+        margin-bottom: 28px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        &:before {
+            content: 'A';
+            font-family: 'Raleway';
+            margin-right: 8px;
+            font-size: 36px;
+            font-weight: 700;
+            align-self: flex-start;
+            line-height: 1.2;
+        }
+    }
+}
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1000px;
+    align-items: flex-start;
+    @include for-tablet-portrait-up{
+        width: 100%;
+        width: 98%;
+    }
+    &__content {
+        width: 50%;
+        margin-bottom: 24px;
+        min-width: 250px;
+
+        @include for-tablet-portrait-up{
+            width: 33%;
+        }
+        @include for-tablet-landscape-up{
+            width: 25%;
+        }
+    }
+    &__label {
+        font-weight: 700;
+        line-height: 2;
+        color: inherit;
+    }
+    &__data {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1.5;
+        color: $textLightGrey;
+        max-width: 216px;
+
+        @include for-tablet-landscape-up{
+            width: 100%;
+        }
+    }
+    &__postal{
+        margin-right: 8px;
+    }
+    &__email{
+        word-wrap: break-word;
+        width: 100%;
+    }
+    &__street {
+        width: 90%;
+    }
+    &__title-in-between{
+        display: flex;
+        width: 100%;
+        margin-top: 32px;
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+    & a{
+        text-decoration: none;
+        color: inherit;
+        //box-shadow: inset 0 -3px 0 $bgcolorlightPurple;
+        border-bottom: 3px solid $bgcolorlightPurple;
+        transition: all .3s ease-in-out 0s;
+        &:hover, &:focus{
+            border-bottom-color: $texLinkDark;
+        }
+    }
+
+}

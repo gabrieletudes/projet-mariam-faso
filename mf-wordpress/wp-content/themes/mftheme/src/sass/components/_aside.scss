@@ -1,0 +1,49 @@
+.handy-aside{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    max-width: 212px;
+    margin-left: 0px;
+    margin-top: 40px;
+    @include for-tablet-portrait-up{
+    margin-top: 4px;
+    margin-left: 16px;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: 'Raleway';
+    }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #727272;
+    }
+    &__email{
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+    &__label {
+        color: $textDark;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 16px;
+        display: flex;
+        font-family: 'Raleway';
+    }
+    &__address {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 132px;
+    }
+    &__postal {
+        margin-right: 4px;
+    }
+    & a{
+        color: inherit;
+        text-decoration: none;
+        //border-bottom: 3px solid $bgcolorlightPurple;
+        box-shadow: inset 0 -3px 0 $bgcolorlightPurple;
+    }
+}

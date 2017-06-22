@@ -1,0 +1,95 @@
+//map
+.card {
+    &-wrapper{
+        display: flex;
+        min-height: 400px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: slategray;
+        //background:url('https://open.mapquestapi.com/staticmap/v5/map?key=A6sK8JnLJV8ZBTPBl9T5KMWm46ml8yGJ&center=49.9990000,5.718&size=1280,348&zoom=16&locations=49.9994000,5.711&defaultMarker=marker-md-EDC46A-BD593F-M') center center;
+        background:url('../img/temp-map.png') center center;
+        background-size: cover;
+        text-decoration: none;
+        color: inherit;
+        box-shadow: inset  0  8px 8px -8px rgba(0, 0, 0, 0.60), inset  0 -8px 8px -8px rgba(0, 0, 0, 0.60);
+        &:hover, &:focus{
+            text-decoration: underline $bgcolorlightPurple;
+        }
+    }
+    &-section {
+        display: flex;
+        max-width: 1024px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: inherit;
+        @include for-tablet-portrait-up{
+            align-items: flex-end;
+        }
+    }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        background-color: $textWhite;
+        min-height: 256px;
+        justify-content: center;
+        font-family: Roboto;
+        width: 320px;
+        line-height: 2;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,0.20);
+        border-radius: 2px;
+
+    }
+    &__name {
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 32px;
+    }
+    &__address {
+        margin-bottom: 12px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__postal {
+        margin-left: 32px;
+        margin-right: 8px;
+    }
+    &__street {
+        width: 79.68%;
+    }
+    &__tel{
+        display: flex;
+        align-items: center;
+    }
+    &__email{
+        display: flex;
+        align-items: center;
+    }
+    &--icon{
+        &:before{
+            font-family: 'fontsmariam';
+            font-size: 24px;
+            margin-right: 16px;
+        }
+        &-location:before{
+            content: '';
+            line-height: 1.7;
+        }
+        &-tel:before{
+            content: '';
+
+        }
+        &-email:before{
+            content: '';
+            //line-height: 1.4;
+        }
+
+    }
+
+
+}

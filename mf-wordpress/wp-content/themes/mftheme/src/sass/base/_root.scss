@@ -1,0 +1,17 @@
+/* Gabriel M
+*
+* /sass/styles.scss - Main stylesheet
+*
+* coded by Gabriel M
+*/
+
+html{
+    @include rem-baseline;
+}
+
+body{
+    font-family: 'Roboto',Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+    min-width: 320px;
+    color: $textDark;
+}

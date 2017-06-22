@@ -1,0 +1,40 @@
+.projets-section{
+    //margin: 0 auto;
+    &__article{
+        max-width: 320px;
+        margin-bottom: 32px;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        @include for-phone-only{
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &--mab-64{
+            //margin-bottom: 32px;
+            @include for-tablet-portrait-up{
+                margin-bottom: 64px;
+            }
+        }
+        &:nth-child(n+5) {
+        @include for-between-tablet-desktop-up{
+            margin-bottom: 32px;
+        }
+        }
+    }
+    & img{
+    }
+    &__article-title{
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: -70px;
+        margin-bottom: 32px;
+        padding: 0 16px;
+        line-height: 1.4;
+    }
+    &__article-content{
+        margin: 0 16px;
+        margin-bottom: 16px;
+    }
+}

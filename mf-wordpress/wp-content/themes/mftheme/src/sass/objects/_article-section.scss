@@ -1,0 +1,85 @@
+.article-section{
+    //display: flex;
+    //flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 1.5;
+    max-width: 90%;
+    font-family: Roboto;
+    @include for-tablet-portrait-up{
+        max-width: 1024px;
+    }
+    &__article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include for-tablet-portrait-up{
+            display: inline-block;
+            max-width: 640px;
+        }
+    }
+    &__title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+    &__labels-wrapper{
+        margin-bottom: 16px;
+        display: inline-block;
+    @include for-tablet-portrait-up{
+        margin-bottom: 0;
+    }
+    }
+    &__label {
+        margin-bottom: 8px;
+    }
+    &__time {
+        margin: 0 16px 0 8px;
+        font-weight: 500;
+        min-width: 20%;
+        @include for-tablet-portrait-up{
+        margin: 0 16px 0 4px;
+        }
+    }
+    &__place{
+        margin: 0 16px 0 8px;
+        display: inline-block;
+        font-weight: 500;
+        @include for-tablet-portrait-up{
+        margin: 0 16px 0 4px;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        line-height: 1.5;
+        @include for-tablet-portrait-up{
+            flex-direction: row;
+        }
+        & p{
+            margin: 32px 0;
+        }
+        & p + p{
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+        & img {
+            //comment for myself use 304x168 for small img and 640x224
+            width: 100%;
+            //margin-right: 4px;
+            @include for-tablet-portrait-up{
+                width: auto;
+                //max-width: auto;
+            }
+        }
+        & img + img{
+            margin-top: 16px;
+            @include for-tablet-portrait-up{
+                width: auto;
+                margin-top: 0;
+            }
+        }
+    }
+}

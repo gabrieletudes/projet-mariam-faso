@@ -1,0 +1,17 @@
+.photos-section{
+    &__img{
+        margin-bottom: 16px;
+        width: 45%;
+        height: auto;
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    @include for-tablet-portrait-up{
+        &__img{
+            display: flex;
+            width: 240px;
+        }
+    }
+}

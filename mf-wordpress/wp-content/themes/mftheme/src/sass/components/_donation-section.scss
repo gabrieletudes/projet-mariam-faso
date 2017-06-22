@@ -1,0 +1,82 @@
+.donation-section{
+    //margin: 0 auto;
+    &__article{
+        max-width: 320px;
+        margin-bottom: 32px;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        @include for-phone-only{
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        @include for-between-tablet-desktop-up{
+            margin-bottom: 0;
+        }
+        & img{
+            //border-bottom: 1px solid green;
+        }
+        &-title{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 8px 0;
+            padding: 0 16px;
+            line-height: 1.4;
+            transition: all .3s ease-in-out;
+            &--fs-28{
+                margin-top: 0;
+                @include for-between-tablet-desktop-up{
+                    font-size: 28px;
+                }
+            }
+        }
+        &-content{
+            margin: 8px 16px 16px;
+            margin-bottom: 16px;
+        }
+        &-link{
+            text-decoration: none;
+            color: inherit;
+            align-self: center;
+            border-radius: 100px;
+            width: 146px;
+            color: darken($bgcolorlightPurple, 10%);
+            &:focus{
+                //width: 146px;
+                background-color: darken($bgcolorlightPurple, 10%);
+                color: $textWhite;
+                //border: 4px dashed;
+            }
+        }
+        &--icon{
+            font-family: 'fontsmariam';
+            font-size: 96px;
+            display: flex;
+            justify-content: center;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color: darken($bgcolorlightPurple, 10%);
+            }
+        }
+        &--icon-donnation{
+            &:before{
+                content: '';
+            }
+        }
+        &--icon-agenda{
+            &:before{
+                content: '';
+            }
+        }
+        &--icon-travel{
+            &:before{
+                content: '';
+            }
+        }
+    }
+    &__content-wrap{
+        max-width: 488px;
+    }
+
+}

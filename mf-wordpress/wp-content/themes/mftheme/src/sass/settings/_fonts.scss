@@ -1,0 +1,172 @@
+/* Gabriel M
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Gabriel M
+ */
+
+// Variables
+
+// Fontawesome
+@font-face {
+    font-family: '';
+    src: url('#{ $fontPath }.eot');
+    src: url('#{ $fontPath }.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }.woff2') format('woff2'),
+         url('#{ $fontPath }.woff') format('woff'),
+         url('#{ $fontPath }.ttf') format('truetype'),
+         url('#{ $fontPath }.svg#regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// fontsmariam
+@font-face {
+  font-family: 'fontsmariam';
+  src:  url('#{ $fontPath }fontsmariam/fontsmariam.eot?o6pc77');
+  src:  url('#{ $fontPath }fontsmariam/fontsmariam.eot?o6pc77#iefix') format('embedded-opentype'),
+    url('#{ $fontPath }fontsmariam/fontsmariam.ttf?o6pc77') format('truetype'),
+    url('#{ $fontPath }fontsmariam/fontsmariam.woff?o6pc77') format('woff'),
+    url('#{ $fontPath }fontsmariam/fontsmariam.svg?o6pc77#helium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'helium' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Roboto
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Thin),
+        url("#{$fontPath}roboto/Roboto-Thin.woff2") format("woff2"),
+        url("#{$fontPath}roboto/Roboto-Thin.woff") format("woff");
+
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Light),
+        url("#{$fontPath}roboto/Roboto-Light.woff2") format("woff2"),
+        url("#{$fontPath}roboto/Roboto-Light.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Regular),
+        url("#{$fontPath}roboto/Roboto-Regular.woff2") format("woff2"),
+        url("#{$fontPath}roboto/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Medium),
+        url("#{$fontPath}roboto/Roboto-Medium.woff2") format("woff2"),
+        url("#{$fontPath}roboto/Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Bold),
+        url("#{$fontPath}roboto/Roboto-Bold.woff2") format("woff2"),
+        url("#{$fontPath}roboto/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+}
+// fin de Roboto
+
+//Raleway
+@font-face {
+    font-family: 'Raleway';
+    src: url('#{ $fontPath }raleway/raleway-black.woff2') format('woff2'),
+         url('#{ $fontPath }raleway/raleway-black.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('#{ $fontPath }raleway/raleway-blackitalic.woff2') format('woff2'),
+         url('#{ $fontPath }raleway/raleway-blackitalic.woff') format('woff');
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('#{ $fontPath }raleway/raleway-bold.woff2') format('woff2'),
+         url('#{ $fontPath }raleway/raleway-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('#{ $fontPath }raleway/raleway-bolditalic.woff2') format('woff2'),
+         url('#{ $fontPath }raleway/raleway-bolditalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('#{ $fontPath }raleway/raleway-italic.woff2') format('woff2'),
+         url('#{ $fontPath }raleway/raleway-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('#{ $fontPath }raleway/raleway-medium.woff2') format('woff2'),
+         url('#{ $fontPath }raleway/raleway-medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('#{ $fontPath }raleway/raleway-mediumitalic.woff2') format('woff2'),
+         url('#{ $fontPath }raleway/raleway-mediumitalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('#{ $fontPath }raleway/raleway-regular.woff2') format('woff2'),
+         url('#{ $fontPath }raleway/raleway-regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('#{ $fontPath }raleway/raleway-semibold.woff2') format('woff2'),
+         url('#{ $fontPath }raleway/raleway-semibold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
